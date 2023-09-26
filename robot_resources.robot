@@ -17,14 +17,28 @@ Fechar o navegador
 
 Acessar a home page
     Go To    url=${HOME}
-
+    
 Acessar pagina de login
-   Click Element    locator=lasts-li
+   Go To    url=${LOGIN}
 
-Preencher login
-    Input Text    locator=name    text=Augusto Santos
-    Input Text    locator=emailCad    text=Augusto.santos@gmail.com
-    Input Text    locator=cpf    text=46078980408
-    Input Text    locator=senhaCad    text=As@@3040
-    Input Text    locator=passwordconfirm    text=As@@3040
+Digitar nome "${NOME}"
+    Input Text    locator=name    text=${NOME}
+
+Digitar email "${EMAIL}"
+    Input Text    locator=emailCad    text=${EMAIL}
+
+Digitar cpf "${CPF}"
+    Input Text    locator=cpf    text=${CPF}
+
+Digitar senha "${SENHA}"
+    Input Text    locator=senhaCad    text=${SENHA}
+
+Confirmar senha "${SENHA}"
+    Input Text    locator=passwordconfirm    text=${SENHA}
+
+Enviar cadastro
     Click Element    locator=sendCadButton
+
+Verificar mensagem de falha no login
+	Alert Should Be Present
+	
