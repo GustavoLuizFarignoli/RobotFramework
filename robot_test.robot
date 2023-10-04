@@ -52,7 +52,7 @@ Caso de Teste 04 - Cadastro de Usuário sem dominio de email"
     Digitar senha "Ja@@3040"
     Confirmar senha "Ja@@3040"
     Enviar cadastro
-    Verificar mensagem de falha no login
+    Verificar mensagem de falha no cadastro
 
 Caso de Teste 05 - Cadastro de Usuário com CPF Invalido"
     [Documentation]    Esse teste verifica se o Cadastro é validado corretamente se um cpf invalido for recebido
@@ -64,7 +64,7 @@ Caso de Teste 05 - Cadastro de Usuário com CPF Invalido"
     Digitar senha "Fs@@3040"
     Confirmar senha "Fs@@3040"
     Enviar cadastro
-    Verificar mensagem de falha no login
+    Verificar mensagem de falha no cadastro
 
 Caso de Teste 06 - Cadastro de Usuário com senha invalida"
     [Documentation]    Esse teste verifica se a senha é validada corretamente
@@ -76,7 +76,7 @@ Caso de Teste 06 - Cadastro de Usuário com senha invalida"
     Digitar senha "Ma2135"
     Confirmar senha "Ma2135"
     Enviar cadastro
-    Verificar mensagem de falha no login
+    Verificar mensagem de falha no cadastro
 
 Caso de Teste 07 - Cadastro de Usuário com senhas diferentes"
     [Documentation]    Esse teste verifica se a senha é validada corretamente
@@ -88,7 +88,7 @@ Caso de Teste 07 - Cadastro de Usuário com senhas diferentes"
     Digitar senha "Rf@@7403"
     Confirmar senha "Rf@@7404"
     Enviar cadastro
-    Verificar mensagem de falha no login
+    Verificar mensagem de falha no cadastro
 
 Caso de Teste 08 - Cadastro de Usuário com email já cadastrado no Banco de Dados"
     [Documentation]    Esse teste verifica se a verificação de cadastro com email existente, funciona corretamente
@@ -100,19 +100,29 @@ Caso de Teste 08 - Cadastro de Usuário com email já cadastrado no Banco de Dad
     Digitar senha "As@@1234"
     Confirmar senha "As@@1234"
     Enviar cadastro
-    Verificar mensagem de falha no login
+    Verificar mensagem de falha no cadastro
 
 Caso de Teste 09 - Cadastro de Usuário com CPF já cadastrado no Banco de Dados"
     [Documentation]    Esse teste verifica se a verificação de cadastro existente, funciona corretamente
 	[Tags]             Cadastro_Reptido
     Acessar pagina de login
-    Digitar nome "Augusto Santos"
-    Digitar email "Augusto.santos@gmail.com"
+    Digitar nome "Augusto Silva"
+    Digitar email "Augusto.silva@gmail.com"
     Digitar cpf "46078980408"
-    Digitar senha "As@@3040"
-    Confirmar senha "As@@3040"
+    Digitar senha "As@@3152"
+    Confirmar senha "As@@3152"
     Enviar cadastro
-    Verificar mensagem de falha no login
+    Verificar mensagem de falha no cadastro
+
+Caso de Teste 10 - Pedido de Imovel Vazio"
+	[Documentation]    Esse testa se é possível fazer um pedido de imovel sem preencher nehuma informação
+	[Tags]             Pedido_Imovel_Vazio
+    Acessar pagina de login
+    Digitar email login "Augusto.santos@gmail.com"
+	Digitar senha login "As@@3040"
+	Enviar login
+	Acessar pedido de Imovel
+	Enviar pedido
     
     
     

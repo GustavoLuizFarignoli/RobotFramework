@@ -5,7 +5,7 @@ Library	SeleniumLibrary
 ${BROWSER}	chrome
 ${HOME}  http://localhost/Teto-Facil/frontEnd/homepage.php
 ${LOGIN}  http://localhost/Teto-Facil/frontEnd/loginpage.php
-
+${IMOVEL}  http://localhost/Teto-facil/frontEnd/uploadImovel.php
 *** Keywords ***
 Abrir o navegador
     Open Browser	browser=${BROWSER}
@@ -20,6 +20,9 @@ Acessar a home page
     
 Acessar pagina de login
    Go To    url=${LOGIN}
+
+Acessar pedido de Imovel
+   Go To    url=${IMOVEL}
 
 Digitar nome "${NOME}"
     Input Text    locator=name    text=${NOME}
@@ -39,9 +42,34 @@ Confirmar senha "${SENHA}"
 Enviar cadastro
     Click Element    locator=sendCadButton
 
-Verificar mensagem de falha no login
+Verificar mensagem de falha no cadastro
 	Alert Should Be Present
 
 Verificar se nome do usuário aparece na tela de boas vindas "${FULL_NAME}"
 	Page Should Contain	Olá, ${FULL_NAME}
+
+Digitar email login "${EMAIL}"
+    Input Text    locator=nomeLogin    text=${EMAIL}
+
+Digitar senha login "${SENHA}"
+    Input Text    locator=senhaLogin    text=${SENHA}
+
+Enviar login
+    Click Element    locator=sendLoginButton
+
+Digitar Rua "${RUA}"
+    Input Text    locator=rua    text=${RUA}
+
+Digitar Numero "${NUM}"
+    Input Text    locator=numero    text=${NUM}
+
+Digitar Bairro "${BAIRRO}"
+    Input Text    locator=bairro    text=${BAIRRO}
+
+Digitar Cidade "${CIDADE}"
+    Input Text    locator=cidade    text=${CIDADE}
+
+Enviar pedido
+    Click Element    //*[@id="form"]/input[9]
+    
 	
