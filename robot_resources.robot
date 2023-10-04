@@ -41,4 +41,7 @@ Enviar cadastro
 
 Verificar mensagem de falha no login
 	Alert Should Be Present
+
+Verificar se nome do usuário aparece na tela de boas vindas "${FULL_NAME}"
+	Page Should Contain	Olá, ${FULL_NAME}
 	

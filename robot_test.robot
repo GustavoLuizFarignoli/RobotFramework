@@ -16,6 +16,7 @@ Caso de Teste 01 - Realizar Cadastro Correto"
     Digitar senha "As@@3040"
     Confirmar senha "As@@3040"
     Enviar cadastro
+    Verificar se nome do usuário aparece na tela de boas vindas "Augusto Santos"
 
 Caso de Teste 02 - Cadastro de Usuário com CPF Formatado"
     [Documentation]    Esse teste verifica se o Cadastro permite cpf formatado
@@ -27,17 +28,19 @@ Caso de Teste 02 - Cadastro de Usuário com CPF Formatado"
     Digitar senha "Cs@@3040"
     Confirmar senha "Cs@@3040"
     Enviar cadastro
+    Verificar se nome do usuário aparece na tela de boas vindas "Caio Santos"
     
 Caso de Teste 03 - Cadastro de Usuário com Acentuação"
     [Documentation]    Esse teste verifica se o Cadastro permite nome com acentuação
 	[Tags]             Acentuacao
     Acessar pagina de login
-    Digitar nome "José Alcide"
+    Digitar nome "José Alcides"
     Digitar email "Jose.Alcides@gmail.com"
     Digitar cpf "14838645457"
     Digitar senha "Ja@@3040"
     Confirmar senha "Ja@@3040"
     Enviar cadastro
+    Verificar se nome do usuário aparece na tela de boas vindas "José Alcides"
 
 Caso de Teste 04 - Cadastro de Usuário sem dominio de email"
     [Documentation]    Esse teste verifica se o Cadastro permite nome com acentuação
@@ -77,7 +80,7 @@ Caso de Teste 06 - Cadastro de Usuário com senha invalida"
 
 Caso de Teste 07 - Cadastro de Usuário com senhas diferentes"
     [Documentation]    Esse teste verifica se a senha é validada corretamente
-	[Tags]             Senha_Invalida
+	[Tags]             Senha_diferentes
     Acessar pagina de login
     Digitar nome "Rafael Lange"
     Digitar email "Rafael.Lange@gmail.com"
