@@ -43,7 +43,7 @@ Caso de Teste 03 - Cadastro de Usuário com Acentuação"
     Verificar se nome do usuário aparece na tela de boas vindas "José Alcides"
 
 Caso de Teste 04 - Cadastro de Usuário sem dominio de email"
-    [Documentation]    Esse teste verifica se o Cadastro permite nome com acentuação
+    [Documentation]    Esse teste verifica se o Cadastro impede tentativas que não possuem um email válido
 	[Tags]             email_invalido
     Acessar pagina de login
     Digitar nome "José Alcide"
@@ -79,7 +79,7 @@ Caso de Teste 06 - Cadastro de Usuário com senha invalida"
     Verificar mensagem de falha no cadastro
 
 Caso de Teste 07 - Cadastro de Usuário com senhas diferentes"
-    [Documentation]    Esse teste verifica se a senha é validada corretamente
+    [Documentation]    Esse teste verifica se a senha é confrima as senhas corretamente
 	[Tags]             Senha_diferentes
     Acessar pagina de login
     Digitar nome "Rafael Lange"
@@ -91,7 +91,7 @@ Caso de Teste 07 - Cadastro de Usuário com senhas diferentes"
     Verificar mensagem de falha no cadastro
 
 Caso de Teste 08 - Cadastro de Usuário com email já cadastrado no Banco de Dados"
-    [Documentation]    Esse teste verifica se a verificação de cadastro com email existente, funciona corretamente
+    [Documentation]    Esse teste verifica se a verificação de cadastro com email já cadastrado é barrado corretamente
 	[Tags]             Validacao_email
     Acessar pagina de login
     Digitar nome "Augusto Felipe Santos"
@@ -103,7 +103,7 @@ Caso de Teste 08 - Cadastro de Usuário com email já cadastrado no Banco de Dad
     Verificar mensagem de falha no cadastro
 
 Caso de Teste 09 - Cadastro de Usuário com CPF já cadastrado no Banco de Dados"
-    [Documentation]    Esse teste verifica se a verificação de cadastro existente, funciona corretamente
+    [Documentation]    Esse teste verifica se a verificação de cadastro com cpf já cadastrado é barrado corretamente
 	[Tags]             Cadastro_Reptido
     Acessar pagina de login
     Digitar nome "Augusto Silva"
