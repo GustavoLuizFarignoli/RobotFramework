@@ -1,1074 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231004 10:20:34.414" rpa="false" schemaversion="4">
-<suite id="s1" name="Robot Test" source="C:\Users\Windows\Desktop\faculdade\Puc\Verificacao e Validacao\RobotFramework\robot_test.robot">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231010 08:31:25.293" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Test" source="C:\Users\Gustavo\Desktop\faculdade\Verificação e Validação\TrabalhoRA3\robot_test.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Realizar Cadastro Correto&quot;" line="9">
 <kw name="Abrir o navegador" library="robot_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:20:34.682" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:20:34.682" endtime="20231004 10:20:36.224"/>
+<msg timestamp="20231010 08:31:26.127" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231010 08:31:26.127" endtime="20231010 08:31:29.985"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:20:36.224" endtime="20231004 10:20:36.348"/>
+<status status="PASS" starttime="20231010 08:31:29.985" endtime="20231010 08:31:30.131"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:34.681" endtime="20231004 10:20:36.348"/>
+<status status="PASS" starttime="20231010 08:31:26.127" endtime="20231010 08:31:30.131"/>
 </kw>
 <kw name="Acessar pagina de login" library="robot_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${LOGIN}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:20:36.349" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:20:36.349" endtime="20231004 10:20:36.426"/>
+<msg timestamp="20231010 08:31:30.131" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
+<status status="PASS" starttime="20231010 08:31:30.131" endtime="20231010 08:31:30.413"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:36.349" endtime="20231004 10:20:36.426"/>
+<status status="PASS" starttime="20231010 08:31:30.131" endtime="20231010 08:31:30.413"/>
 </kw>
 <kw name="Digitar nome &quot;Augusto Santos&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=name</arg>
 <arg>text=${NOME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:36.428" level="INFO">Typing text 'Augusto Santos' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:20:36.427" endtime="20231004 10:20:36.592"/>
+<msg timestamp="20231010 08:31:30.427" level="INFO">Typing text 'Augusto Santos' into text field 'name'.</msg>
+<status status="PASS" starttime="20231010 08:31:30.427" endtime="20231010 08:31:30.744"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:36.426" endtime="20231004 10:20:36.592"/>
+<status status="PASS" starttime="20231010 08:31:30.427" endtime="20231010 08:31:30.744"/>
 </kw>
 <kw name="Digitar email &quot;Augusto.santos@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=emailCad</arg>
 <arg>text=${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:36.593" level="INFO">Typing text 'Augusto.santos@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:36.593" endtime="20231004 10:20:36.701"/>
+<msg timestamp="20231010 08:31:30.744" level="INFO">Typing text 'Augusto.santos@gmail.com' into text field 'emailCad'.</msg>
+<status status="PASS" starttime="20231010 08:31:30.744" endtime="20231010 08:31:30.948"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:36.593" endtime="20231004 10:20:36.701"/>
+<status status="PASS" starttime="20231010 08:31:30.744" endtime="20231010 08:31:30.948"/>
 </kw>
 <kw name="Digitar cpf &quot;46078980408&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=cpf</arg>
 <arg>text=${CPF}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:36.702" level="INFO">Typing text '46078980408' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:20:36.701" endtime="20231004 10:20:36.799"/>
+<msg timestamp="20231010 08:31:30.948" level="INFO">Typing text '46078980408' into text field 'cpf'.</msg>
+<status status="PASS" starttime="20231010 08:31:30.948" endtime="20231010 08:31:31.126"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:36.701" endtime="20231004 10:20:36.799"/>
+<status status="PASS" starttime="20231010 08:31:30.948" endtime="20231010 08:31:31.127"/>
 </kw>
 <kw name="Digitar senha &quot;As@@3040&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=senhaCad</arg>
 <arg>text=${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:36.800" level="INFO">Typing text 'As@@3040' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:36.799" endtime="20231004 10:20:36.892"/>
+<msg timestamp="20231010 08:31:31.133" level="INFO">Typing text 'As@@3040' into text field 'senhaCad'.</msg>
+<status status="PASS" starttime="20231010 08:31:31.131" endtime="20231010 08:31:31.287"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:36.799" endtime="20231004 10:20:36.892"/>
+<status status="PASS" starttime="20231010 08:31:31.131" endtime="20231010 08:31:31.287"/>
 </kw>
 <kw name="Confirmar senha &quot;As@@3040&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=passwordconfirm</arg>
 <arg>text=${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:36.894" level="INFO">Typing text 'As@@3040' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:20:36.893" endtime="20231004 10:20:36.983"/>
+<msg timestamp="20231010 08:31:31.290" level="INFO">Typing text 'As@@3040' into text field 'passwordconfirm'.</msg>
+<status status="PASS" starttime="20231010 08:31:31.289" endtime="20231010 08:31:31.448"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:36.893" endtime="20231004 10:20:36.984"/>
+<status status="PASS" starttime="20231010 08:31:31.288" endtime="20231010 08:31:31.448"/>
 </kw>
 <kw name="Enviar cadastro" library="robot_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>locator=sendCadButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:36.984" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:20:36.984" endtime="20231004 10:20:37.139"/>
+<msg timestamp="20231010 08:31:31.448" level="INFO">Clicking element 'sendCadButton'.</msg>
+<status status="PASS" starttime="20231010 08:31:31.448" endtime="20231010 08:31:31.606"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:36.984" endtime="20231004 10:20:37.139"/>
+<status status="PASS" starttime="20231010 08:31:31.448" endtime="20231010 08:31:31.606"/>
 </kw>
 <kw name="Verificar se nome do usuário aparece na tela de boas vindas &quot;Augusto Santos&quot;" library="robot_resources" sourcename="Verificar se nome do usuário aparece na tela de boas vindas &quot;${FULL_NAME}&quot;">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Olá, ${FULL_NAME}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231004 10:20:37.159" level="INFO">Current page contains text 'Olá, Augusto Santos'.</msg>
-<status status="PASS" starttime="20231004 10:20:37.140" endtime="20231004 10:20:37.159"/>
+<msg timestamp="20231010 08:31:31.793" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231010 08:31:31.793" level="FAIL">UnexpectedAlertPresentException: Alert Text: Email já cadastrado
+Message: unexpected alert open: {Alert text : Email já cadastrado}
+  (Session info: chrome=117.0.5938.150)
+Stacktrace:
+	GetHandleVerifier [0x00007FF659DB7D12+55474]
+	(No symbol) [0x00007FF659D277C2]
+	(No symbol) [0x00007FF659BDE0EB]
+	(No symbol) [0x00007FF659C58132]
+	(No symbol) [0x00007FF659C3EF33]
+	(No symbol) [0x00007FF659C13D41]
+	(No symbol) [0x00007FF659C14F84]
+	GetHandleVerifier [0x00007FF65A11B762+3609346]
+	GetHandleVerifier [0x00007FF65A171A80+3962400]
+	GetHandleVerifier [0x00007FF65A169F0F+3930799]
+	GetHandleVerifier [0x00007FF659E53CA6+694342]
+	(No symbol) [0x00007FF659D32218]
+	(No symbol) [0x00007FF659D2E484]
+	(No symbol) [0x00007FF659D2E5B2]
+	(No symbol) [0x00007FF659D1EE13]
+	BaseThreadInitThunk [0x00007FFBC9107604+20]
+	RtlUserThreadStart [0x00007FFBC9A626A1+33]
+</msg>
+<status status="FAIL" starttime="20231010 08:31:31.609" endtime="20231010 08:31:31.911"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:37.140" endtime="20231004 10:20:37.159"/>
+<status status="FAIL" starttime="20231010 08:31:31.608" endtime="20231010 08:31:31.911"/>
 </kw>
 <kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:20:37.318" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:20:37.160" endtime="20231004 10:20:37.319"/>
+<msg timestamp="20231010 08:31:32.043" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231010 08:31:31.911" endtime="20231010 08:31:32.043"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:20:37.319" endtime="20231004 10:20:39.404"/>
+<status status="PASS" starttime="20231010 08:31:32.043" endtime="20231010 08:31:34.359"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:37.160" endtime="20231004 10:20:39.404"/>
+<status status="PASS" starttime="20231010 08:31:31.911" endtime="20231010 08:31:34.359"/>
 </kw>
 <doc>Esse teste verifica se o Cadastro é validado corretamente</doc>
 <tag>Login_correto</tag>
-<status status="PASS" starttime="20231004 10:20:34.679" endtime="20231004 10:20:39.404"/>
+<status status="FAIL" starttime="20231010 08:31:26.127" endtime="20231010 08:31:34.359">UnexpectedAlertPresentException: Alert Text: Email já cadastrado
+Message: unexpected alert open: {Alert text : Email já cadastrado}
+  (Session info: chrome=117.0.5938.150)
+Stacktrace:
+	GetHandleVerifier [0x00007FF659DB7D12+55474]
+	(No symbol) [0x00007FF659D277C2]
+	(No symbol) [0x00007FF659BDE0EB]
+	(No symbol) [0x00007FF659C58132]
+	(No symbol) [0x00007FF659C3EF33]
+	(No symbol) [0x00007FF659C13D41]
+	(No symbol) [0x00007FF659C14F84]
+	GetHandleVerifier [0x00007FF65A11B762+3609346]
+	GetHandleVerifier [0x00007FF65A171A80+3962400]
+	GetHandleVerifier [0x00007FF65A169F0F+3930799]
+	GetHandleVerifier [0x00007FF659E53CA6+694342]
+	(No symbol) [0x00007FF659D32218]
+	(No symbol) [0x00007FF659D2E484]
+	(No symbol) [0x00007FF659D2E5B2]
+	(No symbol) [0x00007FF659D1EE13]
+	BaseThreadInitThunk [0x00007FFBC9107604+20]
+	RtlUserThreadStart [0x00007FFBC9A626A1+33]
+</status>
 </test>
 <test id="s1-t2" name="Caso de Teste 02 - Cadastro de Usuário com CPF Formatado&quot;" line="21">
 <kw name="Abrir o navegador" library="robot_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:20:39.406" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:20:39.406" endtime="20231004 10:20:40.888"/>
+<msg timestamp="20231010 08:31:34.359" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231010 08:31:34.359" endtime="20231010 08:31:36.575"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:20:40.888" endtime="20231004 10:20:41.016"/>
+<status status="PASS" starttime="20231010 08:31:36.575" endtime="20231010 08:31:36.715"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:39.406" endtime="20231004 10:20:41.016"/>
+<status status="PASS" starttime="20231010 08:31:34.359" endtime="20231010 08:31:36.715"/>
 </kw>
 <kw name="Acessar pagina de login" library="robot_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${LOGIN}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:20:41.017" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:20:41.016" endtime="20231004 10:20:41.094"/>
+<msg timestamp="20231010 08:31:36.715" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
+<status status="PASS" starttime="20231010 08:31:36.715" endtime="20231010 08:31:37.024"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.016" endtime="20231004 10:20:41.094"/>
+<status status="PASS" starttime="20231010 08:31:36.715" endtime="20231010 08:31:37.024"/>
 </kw>
 <kw name="Digitar nome &quot;Caio Santos&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=name</arg>
 <arg>text=${NOME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:41.096" level="INFO">Typing text 'Caio Santos' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:20:41.095" endtime="20231004 10:20:41.249"/>
+<msg timestamp="20231010 08:31:37.027" level="INFO">Typing text 'Caio Santos' into text field 'name'.</msg>
+<status status="PASS" starttime="20231010 08:31:37.027" endtime="20231010 08:31:37.313"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.094" endtime="20231004 10:20:41.249"/>
+<status status="PASS" starttime="20231010 08:31:37.027" endtime="20231010 08:31:37.313"/>
 </kw>
 <kw name="Digitar email &quot;Caio.santos@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=emailCad</arg>
 <arg>text=${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:41.250" level="INFO">Typing text 'Caio.santos@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:41.250" endtime="20231004 10:20:41.358"/>
+<msg timestamp="20231010 08:31:37.327" level="INFO">Typing text 'Caio.santos@gmail.com' into text field 'emailCad'.</msg>
+<status status="PASS" starttime="20231010 08:31:37.325" endtime="20231010 08:31:37.496"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.249" endtime="20231004 10:20:41.358"/>
+<status status="PASS" starttime="20231010 08:31:37.313" endtime="20231010 08:31:37.496"/>
 </kw>
 <kw name="Digitar cpf &quot;527.356.365-85&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=cpf</arg>
 <arg>text=${CPF}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:41.359" level="INFO">Typing text '527.356.365-85' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:20:41.358" endtime="20231004 10:20:41.458"/>
+<msg timestamp="20231010 08:31:37.496" level="INFO">Typing text '527.356.365-85' into text field 'cpf'.</msg>
+<status status="PASS" starttime="20231010 08:31:37.496" endtime="20231010 08:31:37.650"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.358" endtime="20231004 10:20:41.458"/>
+<status status="PASS" starttime="20231010 08:31:37.496" endtime="20231010 08:31:37.650"/>
 </kw>
 <kw name="Digitar senha &quot;Cs@@3040&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=senhaCad</arg>
 <arg>text=${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:41.459" level="INFO">Typing text 'Cs@@3040' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:41.458" endtime="20231004 10:20:41.549"/>
+<msg timestamp="20231010 08:31:37.650" level="INFO">Typing text 'Cs@@3040' into text field 'senhaCad'.</msg>
+<status status="PASS" starttime="20231010 08:31:37.650" endtime="20231010 08:31:37.789"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.458" endtime="20231004 10:20:41.550"/>
+<status status="PASS" starttime="20231010 08:31:37.650" endtime="20231010 08:31:37.790"/>
 </kw>
 <kw name="Confirmar senha &quot;Cs@@3040&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=passwordconfirm</arg>
 <arg>text=${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:41.551" level="INFO">Typing text 'Cs@@3040' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:20:41.550" endtime="20231004 10:20:41.640"/>
+<msg timestamp="20231010 08:31:37.793" level="INFO">Typing text 'Cs@@3040' into text field 'passwordconfirm'.</msg>
+<status status="PASS" starttime="20231010 08:31:37.791" endtime="20231010 08:31:37.932"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.550" endtime="20231004 10:20:41.640"/>
+<status status="PASS" starttime="20231010 08:31:37.790" endtime="20231010 08:31:37.932"/>
 </kw>
 <kw name="Enviar cadastro" library="robot_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>locator=sendCadButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:41.640" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:20:41.640" endtime="20231004 10:20:41.799"/>
+<msg timestamp="20231010 08:31:37.932" level="INFO">Clicking element 'sendCadButton'.</msg>
+<status status="PASS" starttime="20231010 08:31:37.932" endtime="20231010 08:31:38.045"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.640" endtime="20231004 10:20:41.799"/>
+<status status="PASS" starttime="20231010 08:31:37.932" endtime="20231010 08:31:38.046"/>
 </kw>
 <kw name="Verificar se nome do usuário aparece na tela de boas vindas &quot;Caio Santos&quot;" library="robot_resources" sourcename="Verificar se nome do usuário aparece na tela de boas vindas &quot;${FULL_NAME}&quot;">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Olá, ${FULL_NAME}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231004 10:20:41.819" level="INFO">Current page contains text 'Olá, Caio Santos'.</msg>
-<status status="PASS" starttime="20231004 10:20:41.800" endtime="20231004 10:20:41.819"/>
+<msg timestamp="20231010 08:31:38.226" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231010 08:31:38.226" level="FAIL">UnexpectedAlertPresentException: Alert Text: Email já cadastrado
+Message: unexpected alert open: {Alert text : Email já cadastrado}
+  (Session info: chrome=117.0.5938.150)
+Stacktrace:
+	GetHandleVerifier [0x00007FF659DB7D12+55474]
+	(No symbol) [0x00007FF659D277C2]
+	(No symbol) [0x00007FF659BDE0EB]
+	(No symbol) [0x00007FF659C58132]
+	(No symbol) [0x00007FF659C3EF33]
+	(No symbol) [0x00007FF659C13D41]
+	(No symbol) [0x00007FF659C14F84]
+	GetHandleVerifier [0x00007FF65A11B762+3609346]
+	GetHandleVerifier [0x00007FF65A171A80+3962400]
+	GetHandleVerifier [0x00007FF65A169F0F+3930799]
+	GetHandleVerifier [0x00007FF659E53CA6+694342]
+	(No symbol) [0x00007FF659D32218]
+	(No symbol) [0x00007FF659D2E484]
+	(No symbol) [0x00007FF659D2E5B2]
+	(No symbol) [0x00007FF659D1EE13]
+	BaseThreadInitThunk [0x00007FFBC9107604+20]
+	RtlUserThreadStart [0x00007FFBC9A626A1+33]
+</msg>
+<status status="FAIL" starttime="20231010 08:31:38.047" endtime="20231010 08:31:38.226"/>
 </kw>
-<status status="PASS" starttime="20231004 10:20:41.800" endtime="20231004 10:20:41.819"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:20:41.967" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:20:41.820" endtime="20231004 10:20:41.968"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:20:41.968" endtime="20231004 10:20:44.075"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:41.819" endtime="20231004 10:20:44.075"/>
-</kw>
-<doc>Esse teste verifica se o Cadastro permite cpf formatado</doc>
-<tag>CPF_Formatado</tag>
-<status status="PASS" starttime="20231004 10:20:39.405" endtime="20231004 10:20:44.075"/>
-</test>
-<test id="s1-t3" name="Caso de Teste 03 - Cadastro de Usuário com Acentuação&quot;" line="33">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:20:44.077" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:20:44.077" endtime="20231004 10:20:45.572"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:20:45.572" endtime="20231004 10:20:45.700"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:44.077" endtime="20231004 10:20:45.700"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:20:45.701" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:20:45.700" endtime="20231004 10:20:45.777"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:45.700" endtime="20231004 10:20:45.777"/>
-</kw>
-<kw name="Digitar nome &quot;José Alcides&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=name</arg>
-<arg>text=${NOME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:45.779" level="INFO">Typing text 'José Alcides' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:20:45.778" endtime="20231004 10:20:45.928"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:45.777" endtime="20231004 10:20:45.928"/>
-</kw>
-<kw name="Digitar email &quot;Jose.Alcides@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=emailCad</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:45.929" level="INFO">Typing text 'Jose.Alcides@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:45.928" endtime="20231004 10:20:46.037"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:45.928" endtime="20231004 10:20:46.038"/>
-</kw>
-<kw name="Digitar cpf &quot;14838645457&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=cpf</arg>
-<arg>text=${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:46.038" level="INFO">Typing text '14838645457' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:20:46.038" endtime="20231004 10:20:46.131"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:46.038" endtime="20231004 10:20:46.132"/>
-</kw>
-<kw name="Digitar senha &quot;Ja@@3040&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaCad</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:46.133" level="INFO">Typing text 'Ja@@3040' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:46.132" endtime="20231004 10:20:46.225"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:46.132" endtime="20231004 10:20:46.225"/>
-</kw>
-<kw name="Confirmar senha &quot;Ja@@3040&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=passwordconfirm</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:46.226" level="INFO">Typing text 'Ja@@3040' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:20:46.226" endtime="20231004 10:20:46.321"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:46.225" endtime="20231004 10:20:46.321"/>
-</kw>
-<kw name="Enviar cadastro" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendCadButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:46.322" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:20:46.322" endtime="20231004 10:20:46.477"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:46.322" endtime="20231004 10:20:46.477"/>
-</kw>
-<kw name="Verificar se nome do usuário aparece na tela de boas vindas &quot;José Alcides&quot;" library="robot_resources" sourcename="Verificar se nome do usuário aparece na tela de boas vindas &quot;${FULL_NAME}&quot;">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Olá, ${FULL_NAME}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231004 10:20:46.497" level="INFO">Current page contains text 'Olá, José Alcides'.</msg>
-<status status="PASS" starttime="20231004 10:20:46.478" endtime="20231004 10:20:46.497"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:46.477" endtime="20231004 10:20:46.497"/>
+<status status="FAIL" starttime="20231010 08:31:38.046" endtime="20231010 08:31:38.242"/>
 </kw>
 <kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:20:46.674" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:20:46.498" endtime="20231004 10:20:46.674"/>
+<msg timestamp="20231010 08:31:38.388" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231010 08:31:38.247" endtime="20231010 08:31:38.388"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:20:46.674" endtime="20231004 10:20:48.781"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:46.498" endtime="20231004 10:20:48.781"/>
-</kw>
-<doc>Esse teste verifica se o Cadastro permite nome com acentuação</doc>
-<tag>Acentuacao</tag>
-<status status="PASS" starttime="20231004 10:20:44.076" endtime="20231004 10:20:48.781"/>
-</test>
-<test id="s1-t4" name="Caso de Teste 04 - Cadastro de Usuário sem dominio de email&quot;" line="45">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:20:48.784" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:20:48.784" endtime="20231004 10:20:50.247"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:20:50.247" endtime="20231004 10:20:50.373"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:48.783" endtime="20231004 10:20:50.373"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:20:50.374" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:20:50.374" endtime="20231004 10:20:50.456"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:50.374" endtime="20231004 10:20:50.456"/>
-</kw>
-<kw name="Digitar nome &quot;José Alcide&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=name</arg>
-<arg>text=${NOME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:50.458" level="INFO">Typing text 'José Alcide' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:20:50.458" endtime="20231004 10:20:50.610"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:50.457" endtime="20231004 10:20:50.610"/>
-</kw>
-<kw name="Digitar email &quot;Jose.Alcidesgmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=emailCad</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:50.612" level="INFO">Typing text 'Jose.Alcidesgmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:50.612" endtime="20231004 10:20:50.715"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:50.611" endtime="20231004 10:20:50.715"/>
-</kw>
-<kw name="Digitar cpf &quot;79466483838&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=cpf</arg>
-<arg>text=${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:50.716" level="INFO">Typing text '79466483838' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:20:50.716" endtime="20231004 10:20:50.812"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:50.716" endtime="20231004 10:20:50.812"/>
-</kw>
-<kw name="Digitar senha &quot;Ja@@3040&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaCad</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:50.813" level="INFO">Typing text 'Ja@@3040' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:50.813" endtime="20231004 10:20:50.906"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:50.812" endtime="20231004 10:20:50.906"/>
-</kw>
-<kw name="Confirmar senha &quot;Ja@@3040&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=passwordconfirm</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:50.907" level="INFO">Typing text 'Ja@@3040' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:20:50.906" endtime="20231004 10:20:50.996"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:50.906" endtime="20231004 10:20:50.996"/>
-</kw>
-<kw name="Enviar cadastro" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendCadButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:50.997" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:20:50.997" endtime="20231004 10:20:51.047"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:50.997" endtime="20231004 10:20:51.047"/>
-</kw>
-<kw name="Verificar mensagem de falha no cadastro" library="robot_resources">
-<kw name="Alert Should Be Present" library="SeleniumLibrary">
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20231004 10:20:51.047" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20231004 10:20:51.047" endtime="20231004 10:20:51.053"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:51.047" endtime="20231004 10:20:51.053"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:20:51.214" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:20:51.054" endtime="20231004 10:20:51.214"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:20:51.214" endtime="20231004 10:20:53.306"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:51.053" endtime="20231004 10:20:53.306"/>
-</kw>
-<doc>Esse teste verifica se o Cadastro permite nome com acentuação</doc>
-<tag>email_invalido</tag>
-<status status="PASS" starttime="20231004 10:20:48.783" endtime="20231004 10:20:53.306"/>
-</test>
-<test id="s1-t5" name="Caso de Teste 05 - Cadastro de Usuário com CPF Invalido&quot;" line="57">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:20:53.308" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:20:53.308" endtime="20231004 10:20:54.777"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:20:54.778" endtime="20231004 10:20:54.905"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:53.307" endtime="20231004 10:20:54.905"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:20:54.906" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:20:54.905" endtime="20231004 10:20:54.988"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:54.905" endtime="20231004 10:20:54.988"/>
-</kw>
-<kw name="Digitar nome &quot;Felipe Santos&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=name</arg>
-<arg>text=${NOME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:54.990" level="INFO">Typing text 'Felipe Santos' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:20:54.989" endtime="20231004 10:20:55.148"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:54.989" endtime="20231004 10:20:55.148"/>
-</kw>
-<kw name="Digitar email &quot;Felipe.santos@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=emailCad</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:55.149" level="INFO">Typing text 'Felipe.santos@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:55.149" endtime="20231004 10:20:55.255"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:55.148" endtime="20231004 10:20:55.255"/>
-</kw>
-<kw name="Digitar cpf &quot;58638895278&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=cpf</arg>
-<arg>text=${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:55.255" level="INFO">Typing text '58638895278' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:20:55.255" endtime="20231004 10:20:55.351"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:55.255" endtime="20231004 10:20:55.351"/>
-</kw>
-<kw name="Digitar senha &quot;Fs@@3040&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaCad</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:55.352" level="INFO">Typing text 'Fs@@3040' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:20:55.352" endtime="20231004 10:20:55.442"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:55.351" endtime="20231004 10:20:55.442"/>
-</kw>
-<kw name="Confirmar senha &quot;Fs@@3040&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=passwordconfirm</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:55.443" level="INFO">Typing text 'Fs@@3040' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:20:55.442" endtime="20231004 10:20:55.533"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:55.442" endtime="20231004 10:20:55.533"/>
-</kw>
-<kw name="Enviar cadastro" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendCadButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:20:55.534" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:20:55.534" endtime="20231004 10:20:55.694"/>
-</kw>
-<status status="PASS" starttime="20231004 10:20:55.534" endtime="20231004 10:20:55.694"/>
-</kw>
-<kw name="Verificar mensagem de falha no cadastro" library="robot_resources">
-<kw name="Alert Should Be Present" library="SeleniumLibrary">
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20231004 10:20:55.695" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<msg timestamp="20231004 10:21:00.854" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231004 10:21:00.854" level="FAIL">Alert not found in 5 seconds.</msg>
-<status status="FAIL" starttime="20231004 10:20:55.695" endtime="20231004 10:21:00.866"/>
-</kw>
-<status status="FAIL" starttime="20231004 10:20:55.694" endtime="20231004 10:21:00.866"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:21:01.000" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:21:00.867" endtime="20231004 10:21:01.000"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:21:01.000" endtime="20231004 10:21:03.101"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:00.866" endtime="20231004 10:21:03.101"/>
-</kw>
-<doc>Esse teste verifica se o Cadastro é validado corretamente se um cpf invalido for recebido</doc>
-<tag>CPF_Invalido</tag>
-<status status="FAIL" starttime="20231004 10:20:53.307" endtime="20231004 10:21:03.101">Alert not found in 5 seconds.</status>
-</test>
-<test id="s1-t6" name="Caso de Teste 06 - Cadastro de Usuário com senha invalida&quot;" line="69">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:21:03.104" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:21:03.104" endtime="20231004 10:21:04.586"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:21:04.586" endtime="20231004 10:21:04.714"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:03.103" endtime="20231004 10:21:04.714"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:21:04.715" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:21:04.715" endtime="20231004 10:21:04.795"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:04.715" endtime="20231004 10:21:04.796"/>
-</kw>
-<kw name="Digitar nome &quot;Michael Araujo&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=name</arg>
-<arg>text=${NOME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:04.798" level="INFO">Typing text 'Michael Araujo' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:21:04.797" endtime="20231004 10:21:04.952"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:04.796" endtime="20231004 10:21:04.952"/>
-</kw>
-<kw name="Digitar email &quot;Michael.Araujo@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=emailCad</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:04.953" level="INFO">Typing text 'Michael.Araujo@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:04.953" endtime="20231004 10:21:05.069"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:04.952" endtime="20231004 10:21:05.069"/>
-</kw>
-<kw name="Digitar cpf &quot;54516421097&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=cpf</arg>
-<arg>text=${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:05.070" level="INFO">Typing text '54516421097' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:21:05.070" endtime="20231004 10:21:05.169"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:05.069" endtime="20231004 10:21:05.169"/>
-</kw>
-<kw name="Digitar senha &quot;Ma2135&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaCad</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:05.170" level="INFO">Typing text 'Ma2135' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:05.170" endtime="20231004 10:21:05.258"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:05.170" endtime="20231004 10:21:05.258"/>
-</kw>
-<kw name="Confirmar senha &quot;Ma2135&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=passwordconfirm</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:05.259" level="INFO">Typing text 'Ma2135' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:21:05.259" endtime="20231004 10:21:05.348"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:05.259" endtime="20231004 10:21:05.348"/>
-</kw>
-<kw name="Enviar cadastro" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendCadButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:05.349" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:21:05.349" endtime="20231004 10:21:05.398"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:05.348" endtime="20231004 10:21:05.399"/>
-</kw>
-<kw name="Verificar mensagem de falha no cadastro" library="robot_resources">
-<kw name="Alert Should Be Present" library="SeleniumLibrary">
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20231004 10:21:05.399" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20231004 10:21:05.399" endtime="20231004 10:21:05.404"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:05.399" endtime="20231004 10:21:05.404"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:21:05.550" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:21:05.405" endtime="20231004 10:21:05.550"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:21:05.550" endtime="20231004 10:21:07.641"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:05.405" endtime="20231004 10:21:07.641"/>
-</kw>
-<doc>Esse teste verifica se a senha é validada corretamente</doc>
-<tag>Senha_Invalida</tag>
-<status status="PASS" starttime="20231004 10:21:03.103" endtime="20231004 10:21:07.641"/>
-</test>
-<test id="s1-t7" name="Caso de Teste 07 - Cadastro de Usuário com senhas diferentes&quot;" line="81">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:21:07.644" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:21:07.642" endtime="20231004 10:21:09.120"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:21:09.120" endtime="20231004 10:21:09.243"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:07.642" endtime="20231004 10:21:09.243"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:21:09.244" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:21:09.244" endtime="20231004 10:21:09.325"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.243" endtime="20231004 10:21:09.325"/>
-</kw>
-<kw name="Digitar nome &quot;Rafael Lange&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=name</arg>
-<arg>text=${NOME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:09.327" level="INFO">Typing text 'Rafael Lange' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:21:09.326" endtime="20231004 10:21:09.475"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.326" endtime="20231004 10:21:09.475"/>
-</kw>
-<kw name="Digitar email &quot;Rafael.Lange@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=emailCad</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:09.476" level="INFO">Typing text 'Rafael.Lange@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:09.476" endtime="20231004 10:21:09.580"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.475" endtime="20231004 10:21:09.580"/>
-</kw>
-<kw name="Digitar cpf &quot;59965363072&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=cpf</arg>
-<arg>text=${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:09.581" level="INFO">Typing text '59965363072' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:21:09.581" endtime="20231004 10:21:09.676"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.580" endtime="20231004 10:21:09.676"/>
-</kw>
-<kw name="Digitar senha &quot;Rf@@7403&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaCad</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:09.677" level="INFO">Typing text 'Rf@@7403' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:09.677" endtime="20231004 10:21:09.770"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.677" endtime="20231004 10:21:09.770"/>
-</kw>
-<kw name="Confirmar senha &quot;Rf@@7404&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=passwordconfirm</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:09.771" level="INFO">Typing text 'Rf@@7404' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:21:09.771" endtime="20231004 10:21:09.860"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.771" endtime="20231004 10:21:09.860"/>
-</kw>
-<kw name="Enviar cadastro" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendCadButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:09.861" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:21:09.861" endtime="20231004 10:21:09.911"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.860" endtime="20231004 10:21:09.911"/>
-</kw>
-<kw name="Verificar mensagem de falha no cadastro" library="robot_resources">
-<kw name="Alert Should Be Present" library="SeleniumLibrary">
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20231004 10:21:09.912" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20231004 10:21:09.912" endtime="20231004 10:21:09.916"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.912" endtime="20231004 10:21:09.917"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:21:10.104" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:21:09.918" endtime="20231004 10:21:10.104"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:21:10.105" endtime="20231004 10:21:12.195"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:09.917" endtime="20231004 10:21:12.195"/>
-</kw>
-<doc>Esse teste verifica se a senha é validada corretamente</doc>
-<tag>Senha_diferentes</tag>
-<status status="PASS" starttime="20231004 10:21:07.642" endtime="20231004 10:21:12.195"/>
-</test>
-<test id="s1-t8" name="Caso de Teste 08 - Cadastro de Usuário com email já cadastrado no Banco de Dados&quot;" line="93">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:21:12.197" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:21:12.197" endtime="20231004 10:21:13.683"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:21:13.683" endtime="20231004 10:21:13.803"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:12.197" endtime="20231004 10:21:13.803"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:21:13.804" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:21:13.804" endtime="20231004 10:21:13.888"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:13.804" endtime="20231004 10:21:13.888"/>
-</kw>
-<kw name="Digitar nome &quot;Augusto Felipe Santos&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=name</arg>
-<arg>text=${NOME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:13.891" level="INFO">Typing text 'Augusto Felipe Santos' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:21:13.891" endtime="20231004 10:21:14.063"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:13.890" endtime="20231004 10:21:14.063"/>
-</kw>
-<kw name="Digitar email &quot;Augusto.santos@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=emailCad</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:14.065" level="INFO">Typing text 'Augusto.santos@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:14.064" endtime="20231004 10:21:14.177"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:14.064" endtime="20231004 10:21:14.177"/>
-</kw>
-<kw name="Digitar cpf &quot;68395313098&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=cpf</arg>
-<arg>text=${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:14.178" level="INFO">Typing text '68395313098' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:21:14.178" endtime="20231004 10:21:14.277"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:14.177" endtime="20231004 10:21:14.277"/>
-</kw>
-<kw name="Digitar senha &quot;As@@1234&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaCad</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:14.278" level="INFO">Typing text 'As@@1234' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:14.278" endtime="20231004 10:21:14.377"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:14.278" endtime="20231004 10:21:14.377"/>
-</kw>
-<kw name="Confirmar senha &quot;As@@1234&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=passwordconfirm</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:14.378" level="INFO">Typing text 'As@@1234' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:21:14.378" endtime="20231004 10:21:14.468"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:14.377" endtime="20231004 10:21:14.468"/>
-</kw>
-<kw name="Enviar cadastro" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendCadButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:14.469" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:21:14.469" endtime="20231004 10:21:14.549"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:14.469" endtime="20231004 10:21:14.549"/>
-</kw>
-<kw name="Verificar mensagem de falha no cadastro" library="robot_resources">
-<kw name="Alert Should Be Present" library="SeleniumLibrary">
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20231004 10:21:14.550" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20231004 10:21:14.550" endtime="20231004 10:21:14.555"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:14.549" endtime="20231004 10:21:14.555"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:21:14.727" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:21:14.557" endtime="20231004 10:21:14.727"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:21:14.727" endtime="20231004 10:21:16.828"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:14.556" endtime="20231004 10:21:16.828"/>
-</kw>
-<doc>Esse teste verifica se a verificação de cadastro com email existente, funciona corretamente</doc>
-<tag>Validacao_email</tag>
-<status status="PASS" starttime="20231004 10:21:12.196" endtime="20231004 10:21:16.828"/>
-</test>
-<test id="s1-t9" name="Caso de Teste 09 - Cadastro de Usuário com CPF já cadastrado no Banco de Dados&quot;" line="105">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:21:16.830" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:21:16.830" endtime="20231004 10:21:18.301"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:21:18.301" endtime="20231004 10:21:18.427"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:16.830" endtime="20231004 10:21:18.428"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:21:18.428" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:21:18.428" endtime="20231004 10:21:18.505"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:18.428" endtime="20231004 10:21:18.505"/>
-</kw>
-<kw name="Digitar nome &quot;Augusto Silva&quot;" library="robot_resources" sourcename="Digitar nome &quot;${NOME}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=name</arg>
-<arg>text=${NOME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:18.507" level="INFO">Typing text 'Augusto Silva' into text field 'name'.</msg>
-<status status="PASS" starttime="20231004 10:21:18.506" endtime="20231004 10:21:18.659"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:18.506" endtime="20231004 10:21:18.659"/>
-</kw>
-<kw name="Digitar email &quot;Augusto.silva@gmail.com&quot;" library="robot_resources" sourcename="Digitar email &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=emailCad</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:18.662" level="INFO">Typing text 'Augusto.silva@gmail.com' into text field 'emailCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:18.661" endtime="20231004 10:21:18.772"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:18.660" endtime="20231004 10:21:18.772"/>
-</kw>
-<kw name="Digitar cpf &quot;46078980408&quot;" library="robot_resources" sourcename="Digitar cpf &quot;${CPF}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=cpf</arg>
-<arg>text=${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:18.773" level="INFO">Typing text '46078980408' into text field 'cpf'.</msg>
-<status status="PASS" starttime="20231004 10:21:18.773" endtime="20231004 10:21:18.869"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:18.772" endtime="20231004 10:21:18.869"/>
-</kw>
-<kw name="Digitar senha &quot;As@@3152&quot;" library="robot_resources" sourcename="Digitar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaCad</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:18.870" level="INFO">Typing text 'As@@3152' into text field 'senhaCad'.</msg>
-<status status="PASS" starttime="20231004 10:21:18.870" endtime="20231004 10:21:18.961"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:18.870" endtime="20231004 10:21:18.961"/>
-</kw>
-<kw name="Confirmar senha &quot;As@@3152&quot;" library="robot_resources" sourcename="Confirmar senha &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=passwordconfirm</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:18.963" level="INFO">Typing text 'As@@3152' into text field 'passwordconfirm'.</msg>
-<status status="PASS" starttime="20231004 10:21:18.962" endtime="20231004 10:21:19.053"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:18.962" endtime="20231004 10:21:19.053"/>
-</kw>
-<kw name="Enviar cadastro" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendCadButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:19.055" level="INFO">Clicking element 'sendCadButton'.</msg>
-<status status="PASS" starttime="20231004 10:21:19.054" endtime="20231004 10:21:19.135"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:19.054" endtime="20231004 10:21:19.135"/>
-</kw>
-<kw name="Verificar mensagem de falha no cadastro" library="robot_resources">
-<kw name="Alert Should Be Present" library="SeleniumLibrary">
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20231004 10:21:19.136" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20231004 10:21:19.135" endtime="20231004 10:21:19.140"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:19.135" endtime="20231004 10:21:19.140"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:21:19.334" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:21:19.141" endtime="20231004 10:21:19.334"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:21:19.334" endtime="20231004 10:21:21.435"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:19.141" endtime="20231004 10:21:21.435"/>
-</kw>
-<doc>Esse teste verifica se a verificação de cadastro existente, funciona corretamente</doc>
-<tag>Cadastro_Reptido</tag>
-<status status="PASS" starttime="20231004 10:21:16.829" endtime="20231004 10:21:21.435"/>
-</test>
-<test id="s1-t10" name="Caso de Teste 10 - Pedido de Imovel Vazio&quot;" line="117">
-<kw name="Abrir o navegador" library="robot_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231004 10:21:21.437" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20231004 10:21:21.437" endtime="20231004 10:21:22.937"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231004 10:21:22.937" endtime="20231004 10:21:23.066"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:21.437" endtime="20231004 10:21:23.066"/>
-</kw>
-<kw name="Acessar pagina de login" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${LOGIN}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:21:23.067" level="INFO">Opening url 'http://localhost/Teto-Facil/frontEnd/loginpage.php'</msg>
-<status status="PASS" starttime="20231004 10:21:23.066" endtime="20231004 10:21:23.144"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:23.066" endtime="20231004 10:21:23.144"/>
-</kw>
-<kw name="Digitar email login &quot;Augusto.santos@gmail.com&quot;" library="robot_resources" sourcename="Digitar email login &quot;${EMAIL}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=nomeLogin</arg>
-<arg>text=${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:23.146" level="INFO">Typing text 'Augusto.santos@gmail.com' into text field 'nomeLogin'.</msg>
-<status status="PASS" starttime="20231004 10:21:23.145" endtime="20231004 10:21:23.312"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:23.145" endtime="20231004 10:21:23.312"/>
-</kw>
-<kw name="Digitar senha login &quot;As@@3040&quot;" library="robot_resources" sourcename="Digitar senha login &quot;${SENHA}&quot;">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>locator=senhaLogin</arg>
-<arg>text=${SENHA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:23.314" level="INFO">Typing text 'As@@3040' into text field 'senhaLogin'.</msg>
-<status status="PASS" starttime="20231004 10:21:23.313" endtime="20231004 10:21:23.409"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:23.313" endtime="20231004 10:21:23.410"/>
-</kw>
-<kw name="Enviar login" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>locator=sendLoginButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:23.410" level="INFO">Clicking element 'sendLoginButton'.</msg>
-<status status="PASS" starttime="20231004 10:21:23.410" endtime="20231004 10:21:23.587"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:23.410" endtime="20231004 10:21:23.587"/>
-</kw>
-<kw name="Acessar pedido de Imovel" library="robot_resources">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${IMOVEL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231004 10:21:23.588" level="INFO">Opening url 'http://localhost/Teto-facil/frontEnd/uploadImovel.php'</msg>
-<status status="PASS" starttime="20231004 10:21:23.588" endtime="20231004 10:21:23.641"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:23.588" endtime="20231004 10:21:23.641"/>
-</kw>
-<kw name="Enviar pedido" library="robot_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="form"]/input[9]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231004 10:21:23.643" level="INFO">Clicking element '//*[@id="form"]/input[9]'.</msg>
-<status status="PASS" starttime="20231004 10:21:23.641" endtime="20231004 10:21:23.719"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:23.641" endtime="20231004 10:21:23.719"/>
-</kw>
-<kw name="Fechar o navegador" library="robot_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231004 10:21:24.200" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231004 10:21:23.720" endtime="20231004 10:21:24.201"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231004 10:21:24.201" endtime="20231004 10:21:26.302"/>
-</kw>
-<status status="PASS" starttime="20231004 10:21:23.720" endtime="20231004 10:21:26.302"/>
-</kw>
-<doc>Esse testa se é possível fazer um pedido de imovel sem preencher nehuma informação</doc>
-<tag>Pedido_Imovel_Vazio</tag>
-<status status="PASS" starttime="20231004 10:21:21.436" endtime="20231004 10:21:26.302"/>
-</test>
-<doc>Essa suíte testa o site do Teto Facil</doc>
-<status status="FAIL" starttime="20231004 10:20:34.416" endtime="20231004 10:21:26.303"/>
-</suite>
-<statistics>
-<total>
-<stat pass="9" fail="1" skip="0">All Tests</stat>
-</total>
-<tag>
-<stat pass="1" fail="0" skip="0">Acentuacao</stat>
-<stat pass="1" fail="0" skip="0">Cadastro_Reptido</stat>
-<stat pass="1" fail="0" skip="0">CPF_Formatado</stat>
-<stat pass="0" fail="1" skip="0">CPF_Invalido</stat>
-<stat pass="1" fail="0" skip="0">email_invalido</stat>
-<stat pass="1" fail="0" skip="0">Login_correto</stat>
-<stat pass="1" fail="0" skip="0">Pedido_Imovel_Vazio</stat>
-<stat pass="1" fail="0" skip="0">Senha_diferentes</stat>
-<stat pass="1" fail="0" skip="0">Senha_Invalida</stat>
-<stat pass="1" fail="0" skip="0">Validacao_email</stat>
-</tag>
-<suite>
-<stat pass="9" fail="1" skip="0" id="s1" name="Robot Test">Robot Test</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
