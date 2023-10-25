@@ -123,6 +123,7 @@ Caso de Teste 10 - Pedido de Imovel Vazio"
 	Enviar login
 	Acessar pedido de Imovel
 	Enviar pedido
+    Verificar Bloqueio de pedido
     
     
     

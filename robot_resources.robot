@@ -71,5 +71,9 @@ Digitar Cidade "${CIDADE}"
 
 Enviar pedido
     Click Element    //*[@id="form"]/input[9]
+
+Verificar Bloqueio de pedido
+    Page Should Contain    Solicitar Novo Anuncio
+    
     
 	
