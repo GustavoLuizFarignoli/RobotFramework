@@ -51,7 +51,7 @@ Caso de Teste 04 - Cadastro de Usuário sem dominio de email"
     Digitar email       ${EMAIL3.2}
     Digitar cpf         ${CPF3.2}
     Digitar senha       ${SENHA3}
-    Confirmar senha         ${NOME3}
+    Confirmar senha         ${SENHA3}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
@@ -63,7 +63,7 @@ Caso de Teste 05 - Cadastro de Usuário com CPF Invalido"
     Digitar email       ${EMAIL5}
     Digitar cpf         ${CPF5}
     Digitar senha       ${SENHA5}
-    Confirmar senha         ${NOME5}
+    Confirmar senha         ${SENHA5}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
@@ -106,6 +106,7 @@ Caso de Teste 08 - Cadastro de Usuário com email já cadastrado no Banco de Dad
 Caso de Teste 09 - Cadastro de Usuário com CPF já cadastrado no Banco de Dados"
     [Documentation]    Esse teste verifica se a verificação de cadastro com cpf já cadastrado é barrado corretamente
 	[Tags]             Cadastro_Reptido
+    Acessar pagina de login
     Digitar nome        ${NOME1}
     Digitar email       ${EMAIL1.2}
     Digitar cpf         ${CPF1}
