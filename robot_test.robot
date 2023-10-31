@@ -10,47 +10,48 @@ Caso de Teste 01 - Realizar Cadastro Correto"
 	[Documentation]    Esse teste verifica se o Cadastro é validado corretamente
 	[Tags]             Login_correto
     Acessar pagina de login
-    Digitar nome "Augusto Santos"
-    Digitar email "Augusto.santos@gmail.com"
-    Digitar cpf "46078980408"
-    Digitar senha "As@@3040"
-    Confirmar senha "As@@3040"
+    Digitar nome        ${NOME1}
+    Digitar email       ${EMAIL1}
+    Digitar cpf         ${CPF1}
+    Digitar senha       ${SENHA1}
+    Confirmar senha         ${SENHA1}
     Enviar cadastro
-    Verificar se nome do usuário aparece na tela de boas vindas "Augusto Santos"
+    Verificar se nome do usuário aparece na tela de boas vindas     ${NOME1}
 
 Caso de Teste 02 - Cadastro de Usuário com CPF Formatado"
     [Documentation]    Esse teste verifica se o Cadastro permite cpf formatado
 	[Tags]             CPF_Formatado
     Acessar pagina de login
-    Digitar nome "Caio Santos"
-    Digitar email "Caio.santos@gmail.com"
-    Digitar cpf "527.356.365-85"
-    Digitar senha "Cs@@3040"
-    Confirmar senha "Cs@@3040"
+    Digitar nome        ${NOME2}
+    Digitar email       ${EMAIL2}
+    Digitar cpf         ${CPF2}
+    Digitar senha       ${SENHA2}
+    Confirmar senha         ${SENHA2}
     Enviar cadastro
-    Verificar se nome do usuário aparece na tela de boas vindas "Caio Santos"
+    Verificar se nome do usuário aparece na tela de boas vindas     ${NOME2}
     
 Caso de Teste 03 - Cadastro de Usuário com Acentuação"
     [Documentation]    Esse teste verifica se o Cadastro permite nome com acentuação
 	[Tags]             Acentuacao
     Acessar pagina de login
-    Digitar nome "José Alcides"
-    Digitar email "Jose.Alcides@gmail.com"
-    Digitar cpf "14838645457"
-    Digitar senha "Ja@@3040"
-    Confirmar senha "Ja@@3040"
+    Digitar nome        ${NOME3}
+    Digitar email       ${EMAIL3}
+    Digitar cpf         ${CPF3}
+    Digitar senha       ${SENHA3}
+    Confirmar senha         ${SENHA3}
     Enviar cadastro
-    Verificar se nome do usuário aparece na tela de boas vindas "José Alcides"
+    Verificar se nome do usuário aparece na tela de boas vindas     ${NOME3}
 
 Caso de Teste 04 - Cadastro de Usuário sem dominio de email"
     [Documentation]    Esse teste verifica se o Cadastro impede tentativas que não possuem um email válido
 	[Tags]             email_invalido
     Acessar pagina de login
-    Digitar nome "José Alcide"
-    Digitar email "Jose.Alcidesgmail.com"
-    Digitar cpf "79466483838"
-    Digitar senha "Ja@@3040"
-    Confirmar senha "Ja@@3040"
+    Acessar pagina de login
+    Digitar nome        ${NOME3}
+    Digitar email       ${EMAIL3.2}
+    Digitar cpf         ${CPF3.2}
+    Digitar senha       ${SENHA3}
+    Confirmar senha         ${NOME3}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
@@ -58,11 +59,11 @@ Caso de Teste 05 - Cadastro de Usuário com CPF Invalido"
     [Documentation]    Esse teste verifica se o Cadastro é validado corretamente se um cpf invalido for recebido
 	[Tags]             CPF_Invalido
     Acessar pagina de login
-    Digitar nome "Felipe Santos"
-    Digitar email "Felipe.santos@gmail.com"
-    Digitar cpf "58638895278"
-    Digitar senha "Fs@@3040"
-    Confirmar senha "Fs@@3040"
+    Digitar nome        ${NOME5}
+    Digitar email       ${EMAIL5}
+    Digitar cpf         ${CPF5}
+    Digitar senha       ${SENHA5}
+    Confirmar senha         ${NOME5}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
@@ -70,11 +71,11 @@ Caso de Teste 06 - Cadastro de Usuário com senha invalida"
     [Documentation]    Esse teste verifica se a senha é validada corretamente
 	[Tags]             Senha_Invalida
     Acessar pagina de login
-    Digitar nome "Michael Araujo"
-    Digitar email "Michael.Araujo@gmail.com"
-    Digitar cpf "54516421097"
-    Digitar senha "Ma2135"
-    Confirmar senha "Ma2135"
+    Digitar nome        ${NOME4}
+    Digitar email       ${EMAIL4}
+    Digitar cpf         ${CPF4}
+    Digitar senha       ${SENHA4}
+    Confirmar senha         ${SENHA4}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
@@ -82,11 +83,11 @@ Caso de Teste 07 - Cadastro de Usuário com senhas diferentes"
     [Documentation]    Esse teste verifica se a senha é confrima as senhas corretamente
 	[Tags]             Senha_diferentes
     Acessar pagina de login
-    Digitar nome "Rafael Lange"
-    Digitar email "Rafael.Lange@gmail.com"
-    Digitar cpf "59965363072"
-    Digitar senha "Rf@@7403"
-    Confirmar senha "Rf@@7404"
+    Digitar nome        ${NOME7}
+    Digitar email       ${EMAIL7}
+    Digitar cpf         ${CPF7}
+    Digitar senha       ${SENHA7}
+    Confirmar senha         ${SENHA1}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
@@ -94,23 +95,22 @@ Caso de Teste 08 - Cadastro de Usuário com email já cadastrado no Banco de Dad
     [Documentation]    Esse teste verifica se a verificação de cadastro com email já cadastrado é barrado corretamente
 	[Tags]             Validacao_email
     Acessar pagina de login
-    Digitar nome "Augusto Felipe Santos"
-    Digitar email "Augusto.santos@gmail.com"
-    Digitar cpf "68395313098"
-    Digitar senha "As@@1234"
-    Confirmar senha "As@@1234"
+    Digitar nome        ${NOME6}
+    Digitar email       ${EMAIL1}
+    Digitar cpf         ${CPF6}
+    Digitar senha       ${SENHA1}
+    Confirmar senha         ${SENHA1}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
 Caso de Teste 09 - Cadastro de Usuário com CPF já cadastrado no Banco de Dados"
     [Documentation]    Esse teste verifica se a verificação de cadastro com cpf já cadastrado é barrado corretamente
 	[Tags]             Cadastro_Reptido
-    Acessar pagina de login
-    Digitar nome "Augusto Silva"
-    Digitar email "Augusto.silva@gmail.com"
-    Digitar cpf "46078980408"
-    Digitar senha "As@@3152"
-    Confirmar senha "As@@3152"
+    Digitar nome        ${NOME1}
+    Digitar email       ${EMAIL1.2}
+    Digitar cpf         ${CPF1}
+    Digitar senha       ${SENHA1}
+    Confirmar senha         ${SENHA1}
     Enviar cadastro
     Verificar mensagem de falha no cadastro
 
@@ -118,8 +118,8 @@ Caso de Teste 10 - Pedido de Imovel Vazio"
 	[Documentation]    Esse testa se é possível fazer um pedido de imovel sem preencher nehuma informação
 	[Tags]             Pedido_Imovel_Vazio
     Acessar pagina de login
-    Digitar email login "Augusto.santos@gmail.com"
-	Digitar senha login "As@@3040"
+    Digitar email login     ${EMAIL1}
+	Digitar senha login     ${SENHA1}
 	Enviar login
 	Acessar pedido de Imovel
 	Enviar pedido
